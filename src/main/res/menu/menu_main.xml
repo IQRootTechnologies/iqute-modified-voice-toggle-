@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ScreenMirroring">
+
+    <item
+        android:checkable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:layoutDirection="ltr"
+        android:orderInCategory="102"
+        android:title="@string/iquteicon"
+        android:visible="true" />
+
+
+    <item
+        android:id="@+id/action_stop"
+        android:orderInCategory="101"
+        android:title="@string/action_stop"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_start"
+        android:icon="@drawable/ic"
+        android:orderInCategory="103"
+        android:title="Cast screen"
+        android:visible="true"/>
+
+</menu>

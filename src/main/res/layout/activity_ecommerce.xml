@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="12dp"
+        android:layout_height="13dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mic1"
+        android:text=""
+        android:textOn=""
+        android:textOff=""
+        tools:layout_editor_absoluteX="476dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+   <!-- <ImageButton
+        android:id="@+id/btn_speak"
+        android:layout_width="41dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:src="@drawable/mic"
+        android:text="Tap To Speak"
+        tools:layout_editor_absoluteY="-12dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="543dp" /> -->
+
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="52dp"
+        android:columnCount="3"
+        android:columnWidth="646dp"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="196dp"
+            android:layout_height="98dp"
+            android:layout_gravity="left"
+            android:background="@drawable/electronics"
+            android:onClick="startElectronics">
+
+        </Button>
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.02"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintVertical_bias="0.641" />-->
+
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="196dp"
+            android:layout_height="98dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/groce"
+            android:onClick="startGrocery" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="196dp"
+            android:layout_height="98dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/books"
+            android:onClick="startBook" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="196dp"
+            android:layout_height="98dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/fashion"
+            android:onClick="startGrocery" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="196dp"
+            android:layout_height="98dp"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:background="@drawable/laps"
+            android:onClick="startLaptop" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="196dp"
+            android:layout_height="98dp"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:background="@drawable/watch"
+            android:onClick="startWatch" />
+
+
+    </GridLayout>
+
+    <Button
+    android:id="@+id/button7"
+    style="@style/android:Theme.Holo.Light.DarkActionBar"
+    android:layout_width="199dp"
+    android:layout_height="50dp"
+    android:background="@android:color/black"
+        android:textColor="@android:color/white"
+    android:onClick="startNext"
+    android:text="next"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.002"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/android:Theme.Holo.Light.DarkActionBar"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginStart="190dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="startOthers"
+        android:text="Others"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/android:Theme.Holo.Light.DarkActionBar"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="startCamera"
+        android:text="Click to See U"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>
